@@ -5,14 +5,151 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    span {
+      font-size: 40px;
+      color: #717171;
+    }
+
+    body {
+      background-color: #3fb775;
+
+    }
+
+    .white-back {
+      background-color: white;
+      height: 50%;
+      border-bottom-left-radius: 10%;
+      border-bottom-right-radius: 10%;
+    }
+
+    html {
+      display: block;
+    }
+
+    #img {
+      text-align: center;
+    }
+
+    #text-white {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: 3fb775;
+        height: 80vh;
+      }
+
+      html {
+        height: 100%;
+        background-color: white;
+      }
+
+      .white-back {
+        background-color: white;
+        height: 50%;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+      }
+
+      span {
+        font-size: 20px;
+      }
+
+      img {
+        height: 70px;
+        width: auto;
+        margin-top: 70px;
+      }
+
+      .head {
+        color: #14753f;
+        font-size: 12px;
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      .text-div-green {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .main-text {
+        color: white;
+      }
+
+      #moj-termin {
+        height: 30px;
+        width: auto;
+      }
+
+      #footer {
+        font-size: 11px;
+      }
+
+      #footer-div {
+        text-align: center;
+        margin-top: -30px;
+
+      }
+    }
+  </style>
   <title>Document</title>
 </head>
 
 <body>
-  <img src="https://api.zdravstvo.gov.mk/assets/2.35.15/app/images/Symbol.png" alt="">
+
+  <div class="white-back">
+    <div id="img">
+      <img src="https://api.zdravstvo.gov.mk/assets/2.35.15/app/images/Symbol.png" alt="">
+
+    </div>
+    <div id="text-white">
+      <span>СЕРТИФИКАТ ЗА COVID-19 <br> ВАКЦИНАЦИЈА </span> <br>
+      <span>COVID-19 VACCINATION CERTIFICATE</span>
+    </div>
+  </div>
   <div>
-    <span>СЕРТИФИКАТ ЗА COVID</span>
-    <span>IMAM VAKCINA ZIIMI TEBEE</span>
+    <div class="text-div-green">
+      <span class="head">Име / Name</span> <br>
+      <span class="main-text">Методија / Metodija</span>
+    </div>
+    <div class="text-div-green">
+      <span class="head">Презиме / Surname</span> <br>
+      <span class="main-text">Антулески / Antuleski</span>
+    </div>
+    <div class="text-div-green">
+      <span class="head">Вакцина / Vaccine</span> <br>
+      <span class="main-text">AZD1222 - ASTRAZENECA COVID-19 VACCINE</span>
+    </div>
+    <div class="text-div-green">
+      <span class="head">Датум на апликација / Application date</span> <br>
+      <span class="main-text">06.07.2021</span>
+
+    </div>
+    <hr style="width:110px;text-align:center;margin-left: 142px;margin-top: 20px; margin-bottom: 10px;">
+    <div class="text-div-green">
+      <span class="head">Единствена Шифра на Сертификатот</span><br>
+      <span class="head">/ Unique Vaccination Certificate/Assertion Identifier (UVCI):</span>
+      <span class="main-text">01#MK#MINOFHEALTH#KZADOFAD#5</span>
+    </div>
+    <div id="footer-div">
+      <p id="footer">Податоците се обезбедени преку системот <Img id="moj-termin"
+          src="https://api.zdravstvo.gov.mk/assets/2.35.15/app/images/moj-termin-malo-logo.png"></p>
+    </div>
   </div>
 </body>
 
